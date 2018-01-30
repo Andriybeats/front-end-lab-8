@@ -1,0 +1,47 @@
+$wrap-bg-color: rgba(198, 238, 252, 0.53);
+
+$content-bg-color: #3b3b3b;
+
+$text-color: #fff;
+
+$title-color: #fccd10;
+
+$brief-bg-color: #fff178;
+
+$link-color: #f5c70f;
+
+$table-bg-color: #94a34e;
+
+$table-head-border-color: #fff;
+
+$table-td-bg-color: #677d01;
+
+$btn-text-color: #f5c70f;
+
+$btn-border-color: #f5c70f;
+
+$table-caption-color: black;
+
+
+$btn-bg-color: $content-bg-color;
+
+$form-text-color: $title-color;
+
+$image-border-color: $content-bg-color;
+
+$image-outline-color: $title-color;
+
+$table-border-color: $table-bg-color;
+
+
+@mixin brief {
+    color: #000;
+    background: $brief-bg-color;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+@mixin title {
+    text-align: center;
+    text-transform: uppercase;
+}

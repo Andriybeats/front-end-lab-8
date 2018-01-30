@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $wrap-bg-color;
+    color: $text-color;
+}
+
+#content {
+    max-width: 1000px;
+    margin: 10px auto 10px auto;
+    padding: 20px 20px 40px;
+    background-color: $content-bg-color;
+}
+
+h1 {
+    @include title;
+}
+
+h1, h2 {
+    color: $title-color;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+p {
+    padding-right: 10px;
+}
+
+.brief {
+    box-sizing: border-box;
+    @include brief;
+}
+
+.img-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.img-right {
+    float: right;
+    margin-left: 20px;
+}
+
+img {
+    margin-bottom: 20px;
+    border: 2px solid $image-border-color;
+    outline: 2px solid $image-outline-color;
+}
+
+
+a {
+    color: $link-color;
+}
+
+caption {
+    text-align: right;
+    color: $table-caption-color;
+}
+
+table {
+        text-align: left;
+    margin-bottom: 60px;
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid $table-border-color;
+    background: $table-td-bg-color;
+    text-indent: 20px;
+}
+
+th {
+    background: $table-bg-color;
+    color: black;
+    text-indent: 20px;
+    text-transform: uppercase;
+}
+
+th, td {
+    height: 38px;
+}
+
+th:nth-child(2) {
+    border-left: 1px solid $table-head-border-color;
+    border-right: 1px solid $table-head-border-color;
+}
+
+#content{
+    div{
+        h2{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+       p {
+            margin: 18px 0 5px 0;
+            padding: 0;
+            color: $form-text-color;
+            text-transform: uppercase;
+        }
+
+        .user-email,
+        .user-rate,
+        .user-response,
+        input,
+        textarea  {
+            width: 100%;
+        }
+
+        .user-firstName,
+        .user-lastName {
+            width: 49%;   
+        }
+
+     
+        input {
+            height: 25px;
+        }
+
+        input,
+        textarea {
+            padding-left: 5px;
+        }
+
+       .user-response-textarea {
+           height: 160px;
+           margin-bottom: 25px;
+       }
+
+       .btn-submit {
+           color: $btn-text-color;
+           background: $btn-bg-color;
+           border: 1px solid $btn-border-color;
+           width: 24%;
+           padding: 10px 0;
+           font-size: 22px;
+           text-transform: uppercase;
+           
+           
+       }
+
+}
